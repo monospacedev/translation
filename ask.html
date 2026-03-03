@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>字典應用</title>
+</head>
+<body>
+
+    <h1>中韓字典查詢</h1>
+
+    <!-- 問題輸入表單 -->
+    <form method="POST">
+        <input type="text" name="question" placeholder="請輸入中文或韓文" required>
+        <button type="submit">查詢</button>
+    </form>
+
+    <hr>
+
+    <!-- 顯示結果 -->
+    {% if question %}
+        <p><strong>你輸入的是：</strong>{{ question }}</p>
+        <p><strong>翻譯結果：</strong>{{ answer }}</p>
+    {% endif %}
+
+    <br>
+    <a href="/">返回首頁</a>
+
+</body>
+</html>
