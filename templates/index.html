@@ -1,105 +1,120 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python 作品</title>
-
+    <title>邱佑晟 | Python</title>
     <style>
+        :root {
+            --primary: #2d3436;
+            --accent: #0984e3;
+            --bg: #f5f6fa;
+            --text: #2d3436;
+        }
+
         body {
             margin: 0;
-            font-family: "Noto Sans TC", sans-serif;
-            background: linear-gradient(135deg, #e3f2fd, #ffffff);
+            font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
         }
 
         header {
-            background-color: #1565c0;
-            color: white;
+            padding: 80px 20px;
             text-align: center;
-            padding: 40px 20px;
+            background: white;
+            border-bottom: 1px solid #eee;
         }
 
         header h1 {
+            font-size: 2.5rem;
             margin: 0;
-            font-size: 28px;
+            letter-spacing: 2px;
+            font-weight: 300;
         }
 
         header p {
+            color: #636e72;
+            font-size: 1.1rem;
             margin-top: 10px;
-            font-size: 16px;
-            opacity: 0.9;
         }
 
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
         }
 
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
         }
 
         .card {
-            background-color: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: white;
+            padding: 40px 30px;
+            border-radius: 2px;
+            /* Minimalist sharp edges or slight round */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+            transition: all 0.3s ease;
+            text-align: left;
+            border: 1px solid #eee;
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+            border-color: var(--accent);
         }
 
         .card a {
             text-decoration: none;
-            color: #1565c0;
-            font-weight: bold;
-            font-size: 18px;
+            color: var(--primary);
+            font-size: 1.4rem;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 15px;
         }
 
         .card p {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #555;
+            font-size: 0.95rem;
+            color: #b2bec3;
+            margin: 0;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            color: #777;
+            padding: 60px 20px;
+            font-size: 0.8rem;
+            color: #b2bec3;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>邱佑晟</h1>
-    <p>Python ｜作品</p>
-</header>
+    <header>
+        <h1>邱佑晟</h1>
+        <p>PYTHON</p>
+    </header>
 
-<div class="container">
-    <div class="card-grid">
-
-
-        <div class="card">
-            <a href="/ask.html">🤖 字典應用</a>
-            <p>中韓對照。</p>
+    <div class="container">
+        <div class="card-grid">
+            <div class="card">
+                <a href="/ask.html">01. 中韓字典應用</a>
+                <p>簡單直觀的雙語詞彙對照工具。</p>
+            </div>
         </div>
-
     </div>
-</div>
 
-<footer>
-    © 2026 邱佑晟 作品
-</footer>
+    <footer>
+        &copy; 2026 CHIU YU SHENG. ALL RIGHTS RESERVED.
+    </footer>
 
 </body>
+
 </html>
